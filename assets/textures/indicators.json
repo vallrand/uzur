@@ -1,0 +1,84 @@
+{"frames": {
+
+"blue_bar_back.png":
+{
+	"frame": {"x":0,"y":0,"w":208,"h":114},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":114},
+	"sourceSize": {"w":208,"h":114}
+},
+"blue_bar_cover.png":
+{
+	"frame": {"x":208,"y":0,"w":208,"h":114},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":114},
+	"sourceSize": {"w":208,"h":114}
+},
+"blue_bar_rod.png":
+{
+	"frame": {"x":416,"y":0,"w":208,"h":114},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":114},
+	"sourceSize": {"w":208,"h":114}
+},
+"green_bar_back.png":
+{
+	"frame": {"x":624,"y":0,"w":208,"h":114},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":114},
+	"sourceSize": {"w":208,"h":114}
+},
+"green_bar_cover.png":
+{
+	"frame": {"x":832,"y":0,"w":208,"h":114},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":114},
+	"sourceSize": {"w":208,"h":114}
+},
+"health_bar_back.png":
+{
+	"frame": {"x":1040,"y":0,"w":208,"h":114},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":114},
+	"sourceSize": {"w":208,"h":114}
+},
+"health_bar_cover.png":
+{
+	"frame": {"x":1248,"y":0,"w":208,"h":114},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":114},
+	"sourceSize": {"w":208,"h":114}
+},
+"red_bar_base.png":
+{
+	"frame": {"x":1456,"y":0,"w":208,"h":114},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":114},
+	"sourceSize": {"w":208,"h":114}
+},
+"red_bar_segment.png":
+{
+	"frame": {"x":1664,"y":0,"w":208,"h":114},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":114},
+	"sourceSize": {"w":208,"h":114}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "indicators.png",
+	"format": "RGBA8888",
+	"size": {"w":1872,"h":114},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:5b667127d03e6489e676ab3b94e72ada:8d1792caa6d71bab99ad89e4d13583d9:ce747235c3689c52f61007e67a288862$"
+}
+}
