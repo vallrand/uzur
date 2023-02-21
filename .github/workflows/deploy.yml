@@ -36,3 +36,4 @@ jobs:
           BRANCH: gh-pages
           FOLDER: output
           CLEAN: true
+          SINGLE_COMMIT: true

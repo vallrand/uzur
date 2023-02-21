@@ -1,17 +1,16 @@
-const simpleNoise = `
-float random(float seed){ return fract(sin(seed) * 71523.5413291); }
-float random(vec2 seed){ return random(dot(seed, vec2(13.4251, 15.5128))); }
+const noise =
+`float hash11(float seed){ return fract(sin(seed) * 71523.5413291); }
+float hash21(ivec2 seed){ return hash11(dot(vec2(seed), vec2(13.4251, 15.5128))); }
 
-float noise(vec2 coordinate){
-    vec2 quotient = floor(coordinate);
-    vec2 fraction = coordinate - quotient;
-    fraction *= fraction * (3.0 - 2.0 * fraction);
-    return mix(
-        mix(random(quotient), random(quotient + vec2(1, 0)), fraction.x),
-        mix(random(quotient + vec2(0, 1)), random(quotient + vec2(1, 1)), fraction.x),
-        fraction.y
-    );
+float noise(in vec2 st){
+    const ivec2 e = ivec2(1,0);
+    ivec2 i = ivec2(floor(st));
+    vec2 f = fract(st);
+    vec2 u = f * f * (3.0 - 2.0 * f);
+    return mix(mix(hash21(i),hash21(i + e.xy),u.x),
+        mix(hash21(i + e.yx),hash21(i + e.xx),u.x),u.y);
 }`
+
 export const sky = `
 varying vec2 uvPass;
 uniform float time;
@@ -19,7 +18,7 @@ uniform float time;
 uniform vec3 backColor;
 uniform vec3 frontColor;
 
-${simpleNoise}
+${noise}
 
 float fbm(vec2 x){
     float r = 0.0, s = 1.0, w = 1.0;
